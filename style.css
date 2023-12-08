@@ -14,10 +14,11 @@ body {
   font-family: "Source Serif 4", sans-serif;
 
   color: #a54328;
+  background-image: url(./img/bg-paper.svg);
 }
 
 .container {
-  width: 39.3rem;
+  max-width: 40rem;
   padding: 5.4rem 3.7rem;
 
   margin: auto;
@@ -34,7 +35,7 @@ body {
 }
 
 .intro p {
-  font-size: 1.3rem;
+  font-size: 14px;
 }
 
 .prep h1 {
@@ -45,13 +46,15 @@ body {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.8rem;
+  line-height: 17px;
 }
 
 ul,
 ol {
+  font-size: 14px;
+  line-height: 17px;
   margin: 0 0 1.7rem 2.1rem;
 }
 
@@ -73,6 +76,95 @@ button {
   cursor: pointer;
 }
 
-button:hover { 
-    opacity: 0.9;
+button:hover {
+  opacity: 0.9;
+}
+
+/* ------------media queries---------------------------- */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 18.9rem;
+
+    margin: auto;
+  }
+
+  .intro {
+    max-width: 43.5rem;
+  }
+
+  .prep {
+    max-width: 52.5rem;
+  }
+
+  .prep h1,
+  .intro h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .intro img {
+    margin: 6.6rem 0;
+  }
+
+  .intro p {
+    line-height: 25px;
+    font-size: 2rem;
+  }
+
+  .prep h1 {
+    margin: 0 0 5.1rem 0;
+  }
+
+  h2,
+  ul,
+  ol {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  ul,
+  ol {
+    margin: 0 0 2.4rem 3rem;
+  }
+
+  button {
+    width: 13.3rem;
+    height: 4.5rem;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+
+    border-radius: 8px;
+
+    margin: 2.4rem 0 3.6rem 0;
+  }
+
+  /* ---------------------------------------------- */
+
+  @media (min-width: 1100px) {
+    .intro img {
+      width: 41.1rem;
+    }
+  }
+
+  /* ---------------------------------------------- */
+
+  @media (max-width: 1100px) {
+    .container {
+      gap: 7rem;
+    }
+
+    .intro {
+      max-width: 30rem;
+    }
+
+    .prep {
+      max-width: 40rem;
+    }
+  }
 }
