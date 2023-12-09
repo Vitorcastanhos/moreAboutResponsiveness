@@ -23,6 +23,7 @@ body {
   padding: 5.4rem 3.7rem;
 
   margin: auto;
+  /* margin-inline; auto */
 }
 
 .intro h1 {
@@ -32,7 +33,7 @@ body {
 }
 
 .intro img {
-  width: 250px;
+  width: 100%;
   margin: 4.7rem 0;
 }
 
